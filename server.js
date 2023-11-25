@@ -77,6 +77,10 @@ app.get("/", (req, res) => {
   res.send("Application is running");
 });
 
+app.get("/welcome", (req, res) => {
+  res.send("Welcome to app");
+});
+
 // Implements post request to create a new user in database
 //async the req and res
 app.post("/users", async (req, res) => {
